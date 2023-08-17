@@ -7,12 +7,12 @@ const scriptPage = new ScriptPage();
 const assignments = [
   {
     tester: "@ivan",
-    email: "peter.spigt@bitfinex.com",
+    email: "email_here",
     scripts: ["Withdraw (V2)", "Bids & Offers"],
   },
   {
     tester: "@peter",
-    email: "peter.spigt@bitfinex.com",
+    email: "email_here",
     scripts: ["Pay (WIP)", "Residency blocks"],
   },
 ];
