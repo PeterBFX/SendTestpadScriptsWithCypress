@@ -1,21 +1,9 @@
 import { ProjectPage } from "./Pages/projectPage";
 import { ScriptPage } from "./Pages/testScript";
+import testAssignments from "C:/Users/dinge/Desktop/BFX Cypress Projects/SendTestpadScriptsWithCypress/cypress/fixtures/testAssignments.json"
 
 const projectPage = new ProjectPage();
 const scriptPage = new ScriptPage();
-
-const assignments = [
-  {
-    tester: "@ivan",
-    email: "email_here",
-    scripts: ["Withdraw (V2)", "Bids & Offers"],
-  },
-  {
-    tester: "@peter",
-    email: "email_here",
-    scripts: ["Pay (WIP)", "Residency blocks"],
-  },
-];
 
 //Function
 
@@ -42,7 +30,7 @@ it("Duplicates and archives the last folder and renames the new folder", functio
   });
 });
 
-assignments.forEach((tester) => {
+testAssignments.forEach((tester) => {
   if (tester.scripts.length != 0) {
     tester.scripts.forEach((script) => {
       it(`Sends the ${script} script to ${tester.email}`, function () {
