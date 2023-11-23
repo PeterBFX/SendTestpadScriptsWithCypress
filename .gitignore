@@ -1,1 +1,4 @@
 cypress/fixtures/loginDetails.json
+node_modules
+cypress/fixtures/testAssignments.json
+cypress/fixtures/assignments.json
